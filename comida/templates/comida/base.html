@@ -1,0 +1,32 @@
+{% load staticfiles %}
+<html>
+       <head>
+
+         <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+
+         <!--Import materialize.css-->
+         <link type="text/css" rel="stylesheet" href="{% static 'css/style.min.css' %}" />
+
+         <!--Let browser know website is optimized for mobile-->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+           <title>Restaurante</title>
+       </head>
+
+       <body background-color="#060325">
+         <div id="wrapper">
+
+           <!-- Header -->
+           <div id="header">
+             <div class="">
+                    <!-- /Header -->
+           <div class="content container">
+             <div class="row">
+               <div class="col-md-8">
+                 {% block content %}
+                 {% endblock %}
+            </div>
+           </div>
+         </div>
+       </body>
+   </html>
